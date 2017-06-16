@@ -1,0 +1,21 @@
+/* ===============================================================
+    Search 
+=============================================================== */
+.widget_search .search-form {
+    margin: 0px;
+    border-radius: 3px;
+}
+
+/* ===============================================================
+    Recent Posts 
+=============================================================== */
+.post-date { font-size: small; }
+
+/* Adjusts entries position. */
+.widget_recent_entries ul {
+    margin-left: -20px;
+}
+
+.widget_nav_menu ul {
+    margin-left: -20px;
+}
