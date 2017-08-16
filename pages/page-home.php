@@ -31,26 +31,32 @@ $strReview_description = get_field("year_in_review_description");
 $strBenefits1_title = get_field("benefits_1_title");
     $strBenefits1_count = get_field("benefits_1_count");
     $strBenefits1_image = get_field("benefits_1_image");
+    $strBenefits1_link = get_field("benefits_1_link");
 
 $strBenefits2_title = get_field("benefits_2_title");
     $strBenefits2_count = get_field("benefits_2_count");
     $strBenefits2_image = get_field("benefits_2_image");
+    $strBenefits2_link = get_field("benefits_2_link");
 
 $strBenefits3_title = get_field("benefits_3_title");
     $strBenefits3_count = get_field("benefits_3_count");
     $strBenefits3_image = get_field("benefits_3_image");
+    $strBenefits3_link = get_field("benefits_3_link");
 
 $strBenefits4_title = get_field("benefits_4_title");
     $strBenefits4_count = get_field("benefits_4_count");
     $strBenefits4_image = get_field("benefits_4_image");
+    $strBenefits4_link = get_field("benefits_4_link");
 
 $strBenefits5_title = get_field("benefits_5_title");
     $strBenefits5_count = get_field("benefits_5_count");
     $strBenefits5_image = get_field("benefits_5_image");
+    $strBenefits5_link = get_field("benefits_5_link");
 
 $strBenefits6_title = get_field("benefits_6_title");
     $strBenefits6_count = get_field("benefits_6_count");
     $strBenefits6_image = get_field("benefits_6_image");
+    $strBenefits6_link = get_field("benefits_6_link");
 
 // Resources
 $strResources1_title = get_field("resource_1_title");
@@ -94,7 +100,7 @@ get_header(); ?>
 					<!-- slide 1 start -->
 					<!-- ================ -->
 					<?php if ($strHero1_image["url"] && $strHero1_description && $strHero1_url) { ?>
-						<li data-transition="random" data-slotamount="default" data-masterspeed="default" data-title="40 Years of Service, 40 Stories of Success">
+						<li data-transition="random" data-slotamount="default" data-masterspeed="default" data-title="<?php echo $strHero1_description; ?>">
 							<!-- main image -->
 							<img src="<?php echo $strHero1_image["url"]; ?>" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover"  class="rev-slidebg">
 
@@ -113,7 +119,7 @@ get_header(); ?>
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
 								data-x="left"
-								data-y="150"
+								data-y="200"
 								data-start="500"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
@@ -121,7 +127,7 @@ get_header(); ?>
 								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 									<?php echo $strHero1_description; ?><br />
-									<a href="<?php echo $strHero1_url; ?>" class="btn radius-50 btn-dark btn-animated">Read More <i class="fa fa-arrow-right"></i></a> <span class="pl-5 pr-5">or</span> <a href="https://www.swords-to-plowshares.org/contact-us" class="btn radius-50 btn-default btn-animated margin-clear">Contact Us <i class="fa fa-envelope"></i></a>
+									<a href="<?php echo $strHero1_url; ?>" class="btn radius-50 btn-default btn-animated margin-clear">Read More <i class="fa fa-arrow-right"></i></a> 
 							</div>
 
 						</li>
@@ -160,7 +166,7 @@ get_header(); ?>
 								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 									<?php echo $strHero2_description; ?><br />
-									<a href="<?php echo $strHero2_url; ?>" class="btn radius-50 btn-dark btn-animated">Read More <i class="fa fa-arrow-right"></i></a> <span class="pl-5 pr-5">or</span> <a href="https://www.swords-to-plowshares.org/contact-us" class="btn radius-50 btn-default btn-animated margin-clear">Contact Us <i class="fa fa-envelope"></i></a>
+									<a href="<?php echo $strHero2_url; ?>" class="btn radius-50 btn-default btn-animated margin-clear">Read More <i class="fa fa-arrow-right"></i></a> 
 							</div>
 
 							<!-- LAYER NR. 4 -->
@@ -220,7 +226,7 @@ get_header(); ?>
 
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption large_white"
-								data-x="left"
+								data-x="center"
 								data-y="180"
 								data-start="650"
 								data-transform_idle="o:1;"
@@ -229,7 +235,7 @@ get_header(); ?>
 								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
 									<?php echo $strHero3_description; ?><br />
-									<a href="<?php echo $strHero3_url; ?>" class="btn radius-50 btn-dark btn-animated">Read More <i class="fa fa-arrow-right"></i></a> <span class="pl-5 pr-5">or</span> <a href="https://www.swords-to-plowshares.org/contact-us" class="btn radius-50 btn-default btn-animated margin-clear">Contact Us <i class="fa fa-envelope"></i></a>
+									<a href="<?php echo $strHero3_url; ?>" class="btn radius-50 btn-default btn-animated margin-clear">Read More <i class="fa fa-arrow-right"></i></a>
 							</div>
 						</li>
 					<?php } ?>
@@ -256,39 +262,30 @@ get_header(); ?>
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
-								data-x="left"
-								data-y="110"
+								data-x="center"
+								data-y="bottom"
+								data-voffset="50"
 								data-start="500"
+								data-width="650"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
 								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+									<?php echo $strHero4_description; ?><br />
+									<a href="<?php echo $strHero4_url; ?>" class="btn radius-50 btn-default btn-animated margin-clear">Read More <i class="fa fa-arrow-right"></i></a>
 							</div>
 
-							<!-- LAYER NR. 2 -->
-							<div class="tp-caption large_white tp-resizeme"
-								data-x="left"
-								data-y="170"
-								data-start="650"
-								data-transform_idle="o:1;"
-								data-transform_in="o:0;s:2000;e:Power4.easeInOut;">
-							</div>
-
-							<!-- LAYER NR. 3 -->
-							<div class="tp-caption medium_white"
-								data-x="left"
-								data-y="180"
-								data-start="650"
+							<!-- LAYER NR. 4 -->
+							<div class="tp-caption small_white text-center"
+								data-x="center"
+								data-y="bottom"
+								data-start="900"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;s:900;e:Power4.easeInOut;"
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
-								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									<p style="width: 1024px; word-wrap: break-word;">
-										<?php echo $strHero4_description; ?>
-									</p>
-									<a href="<?php echo $strHero4_url; ?>" class="btn radius-50 btn-dark btn-animated">Read More <i class="fa fa-arrow-right"></i></a> <span class="pl-5 pr-5">or</span> <a href="https://www.swords-to-plowshares.org/contact-us" class="btn radius-50 btn-default btn-animated margin-clear">Contact Us <i class="fa fa-envelope"></i></a>
 							</div>
 						</li>
 					<?php } ?>
@@ -313,15 +310,15 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 text-center hover-orange">
-				<a href="https://www.swords-to-plowshares.org/donate" class="beige no-ul"><i class="fa fa-heart-o fa-3x" aria-hidden="true"></i><br />
+				<a href="/donate" class="beige no-ul"><i class="fa fa-heart-o fa-3x" aria-hidden="true"></i><br />
 				<h2><font color="beige">Donate</font></h2></a>
 			</div>
 			<div class="col-md-4 text-center hover-orange">
-				<a href="https://www.swords-to-plowshares.org/get-involved" class="beige no-ul"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br />
+				<a href="/get-involved" class="beige no-ul"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br />
 				<h2><font color="beige">Get Involved</font></h2></a>
 			</div>
 			<div class="col-md-4 text-center hover-orange">
-				<a href="https://www.swords-to-plowshares.org/our-services" class="beige no-ul"><i class="fa fa-certificate fa-3x" aria-hidden="true"></i><br />
+				<a href="/our-services" class="beige no-ul"><i class="fa fa-certificate fa-3x" aria-hidden="true"></i><br />
 				<h2><font color="beige">Veteran Services</font></h2></a>
 			</div>
 		</div>
@@ -345,32 +342,36 @@ get_header(); ?>
 				</div>
 
 				<!-- =================================================================================
-					Blog Posts
+					Blog Feed
 				================================================================================= -->
 				<!-- Define our WP Query Parameters -->
-				<?php $the_query = new WP_Query( array( "posts_per_page" => 3, "category_name" => "Blog" ) ); ?>
+				<?php $the_query = get_posts( array( 
+					"posts_per_page" => 3, 
+					"category_name" => "Blog" 
+				) ); ?>
 				
 				<!-- Start our WP Query -->
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-					<div class="col-xs-12 col-md-12 margin-bottom-40">
-						<div class="col-sm-3 col-md-3">
-                            <?php if(has_post_thumbnail()) { ?>
-                                <a href="<?php the_permalink() ?>">
-                                    <?php the_post_thumbnail('post-thumbnail', array( 'class' => "center-block margin-bottom-15 border-radius-5")); ?>
-                                </a>
-                            <?php } ?>
-						</div>
-						<!-- Blog Entry -->
-						<div class="col-sm-9 col-md-9">
-							<!-- Title -->
-							<h4 class="title"><a class="turquoise" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-
-							<p><time><?php the_date("F j, Y"); ?></time></p>
-							<p class="text-muted"><?php the_excerpt(__('(more…)')); ?></p>
-							<a href="<?php the_permalink() ?>">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
-						</div>
-					</div>
-				<?php endwhile; wp_reset_postdata(); ?>
+				<?php if($the_query): ?>
+					<?php foreach ($the_query as $post): setup_postdata( $post ); ?>
+						<a href="<?php the_permalink() ?>">
+							<div class="col-xs-12 col-md-12 margin-bottom-40 homepage-post">
+								<div class="col-sm-3 col-md-3">
+									<?php if(has_post_thumbnail()) { ?>
+										<?php the_post_thumbnail('post-thumbnail', array( 'class' => "center-block margin-bottom-15 border-radius-5")); ?>
+									<?php } ?>
+								</div>
+							<!-- Blog Entry -->
+								<div class="col-sm-9 col-md-9">
+									<!-- Title -->
+									<h4 class="title turquoise"><?php the_title(); ?></h4>
+									<p><time class="homepage-blog-date"><?php the_date("F j, Y"); ?></time></p>
+									<p><?php the_excerpt(__('(more…)')); ?></p>
+									<p class="turquoise">Read More<i class="pl-5 fa fa-angle-double-right"></i></p>
+								</div>
+							</div>
+						</a>
+					<?php endforeach; wp_reset_postdata(); ?>
+				<?php endif; ?>
 			</div>
 
 			<div class="clearfix visible-xs visible-sm"></div>
@@ -386,53 +387,77 @@ get_header(); ?>
 				</div>
 
 				<!-- =================================================================================
-					Events
+					Events Feed
 				================================================================================= -->
 				<!-- Define our WP Query Parameters -->
-				<?php $the_query = new WP_Query( array( "posts_per_page" => 3, "category_name" => "Events" ) ); ?>
+				<?php // Define our WP Query Parameters
+					$date_now = date('Y-m-d H:i:s');
+					$the_query = get_posts( array(
+						'post_type'			=> 'post',
+						'category_name'  => "Events",
+						'posts_per_page' 	=> 3,
+						
+// 						'meta_query' 		=> array(
+// 							array(
+// 								'key'			=> 'event_date_time',
+// 								'compare'		=> '>=',
+// 								'value'			=> $date_now,
+// 								'type'			=> 'DATETIME'
+// 							)
+// 						),
+						
+						'order' 			=> 'DSC',
+						'orderby' 			=> 'DATE',
+						'meta_key'			=> 'event_date_time'
+					)); // $the_query
+				?>
 				
 				<!-- Construct the event listing loop -->
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+				<?php if($the_query): ?>
+					<?php foreach ($the_query as $post): setup_postdata( $post ); ?>
 						<?php
-							// Display ACF datetime field if set.
 							if (get_field("event_date_time") != null) {
+								// Display ACF datetime field if set.
 								$strDate = date_create(get_field("event_date_time"));
 							} else {
-							// Otherwise use the event creation date so it doesn't look unprofessional.
+								// Otherwise use the event creation date so it doesn't look unprofessional.
 								$strDate = date_create(the_date("", null, null, false));
 							} // if
-							// Dissect the $strDate object.
-								$strWeekDay = date_format($strDate, "l");
-								$strMonthDay = date_format($strDate, "M j");
-								$strEventTime = get_post_meta($post->ID, "eventTime", true);
-					?>
-				
-					<div class="col-xs-12 col-md-12 margin-bottom-40 event-home-item">
-						<div class="padding-top-10 col-xs-3 col-md-3 text-center event-home-item-date">
-							<div class="black text-center text-smaller"><?php echo $strWeekDay; ?></div>
-							<h4 class="margin-top-0"><?php echo $strMonthDay; ?></h4>
-						</div>
-						<div class="col-xs-9 col-md-9">
-							<h4 class="title margin-0 padding-bottom-10"><a class="turquoise" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-							<div class="padding-bottom-10">
-								<?php 
-										// Event Time
-									if (get_field("event_time")) {
-										echo '<div class="event-home-item-time"><i class="fa fa-calendar" style="padding-right:10px;"></i>' . get_field("event_date_time") . '</div>';
-									} // if
-								// Location
-									if (get_field("event_location")) {
-										echo '<div class="event-home-item-location"><i class="fa fa-map-marker" style="padding-right:10px;"></i>' . get_field("event_location") . '</div>';
-									} // if
 
-								?>
-							</div>
-							<p class="text-muted"<?php the_excerpt(__('(more…)')); ?></p>
-							<a href="<?php the_permalink() ?>">View Event<i class="pl-5 fa fa-angle-double-right"></i></a>
-						</div>
-					</div>
-				<?php endwhile; wp_reset_postdata(); ?>
-			</div>
+							// Dissect the $strDate object.
+							$strWeekDay = date_format($strDate, "D");
+							$strMonthDay = date_format($strDate, "M j");
+							$strEventTime = get_post_meta($post->ID, "event_date_time", true);
+						?>
+
+						<div class="col-xs-12 col-md-12 margin-bottom-40 event-home-item homepage-post">
+							<a href="<?php the_permalink() ?>">
+								<div class="padding-top-10 col-xs-3 col-md-3 text-center event-home-item-date">
+									<div class="black text-center text-small"><?php echo $strWeekDay; ?></div>
+										<h4 class="margin-top-0"><?php echo $strMonthDay; ?></h4>
+									</div>
+								<div class="col-xs-9 col-md-9">
+									<h4 class="title margin-0 padding-bottom-10"><?php the_title(); ?></h4>
+									<div class="padding-bottom-10">
+										<?php 
+											// Event Time
+											if (get_field("event_date_time")) {
+												echo '<div class="event-home-item-time"><i class="fa fa-calendar" style="padding-right:10px;"></i>' . get_field("event_date_time") . '</div>';
+											} // if
+										// Location
+											if (get_field("event_location")) {
+												echo '<div class="event-home-item-location"><i class="fa fa-map-marker" style="padding-right:10px;"></i>' . get_field("event_location") . '</div>';
+											} // if
+										?>
+									</div>
+									<p class="text-muted"<?php the_excerpt(__('(more…)')); ?></p>
+									<p class="turquoise">View Event<i class="pl-5 fa fa-angle-double-right"></i></p>
+								</div><!-- /col -->
+							</a>
+						</div><!-- /col -->
+					<?php endforeach; wp_reset_postdata(); ?>
+				<?php endif; ?>
+			</div><!-- /col -->
 		</div>
 	</div>
 	<br />
@@ -466,54 +491,66 @@ get_header(); ?>
 		<div class="row">
 			<!-- Benefits 1 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits1_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits1_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits1_title; ?>" />
 					<h3><?php echo $strBenefits1_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits1_count; ?></span>
 				</div>
+				</a>
 			</div>
 			<!-- Benefits 2 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits2_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits2_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits2_title; ?>" />
 					<h3><?php echo $strBenefits2_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits2_count; ?></span>
 				</div>
+				</a>
 			</div>
 			<!-- Benefits 3 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits3_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits3_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits3_title; ?>" />
 					<h3><?php echo $strBenefits3_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits3_count; ?></span>
 				</div>
+				</a>
 			</div>
 			
 			<div class="clearfix"></div>
 			
 			<!-- Benefits 4 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits4_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits4_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits4_title; ?>" />
 					<h3><?php echo $strBenefits4_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits4_count; ?></span>
 				</div>
+				</a>
 			</div>
 			<!-- Benefits 5 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits5_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits5_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits5_title; ?>" />
 					<h3><?php echo $strBenefits5_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits5_count; ?></span>
 				</div>
+				</a>
 			</div>
 			<!-- Benefits 6 -->
 			<div class="col-xs-12 col-sm-4 text-center">
+				<a class="no-ul" href="<?php echo $strBenefits6_link; ?>">
 				<div class="feature-box shadow-narrow bordered pv-20 light-gray-bg object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="300">
 					<img src="<?php echo $strBenefits6_image[url]; ?>" class="center-block margin-bottom-20" style="width: 100px; height: auto;" alt="<?php echo $strBenefits6_title; ?>" />
 					<h3><?php echo $strBenefits6_title; ?></h3>
 					<span class="counter counting" data-to="1525" data-speed="5000"><?php echo $strBenefits6_count; ?></span>
 				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -525,7 +562,6 @@ get_header(); ?>
 <section class="section light-gray-bg clearfix">
 	<div class="container">
 		<h2>Resources</h2>
-		<div class="separator-2"></div>
 		<div class="row grid-space-10">
 			<!-- Resources 1 -->
 			<div class="col-sm-6 col-md-3">

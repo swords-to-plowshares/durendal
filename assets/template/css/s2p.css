@@ -214,24 +214,6 @@ fieldset[disabled] .btn-default {
   border-color: #ffffff;
 }
 
-/*Donate Button*/
-.btn-donate {
-  color: #ffffff;
-  background-color: #8e4905;
-  border-color: #b0984d;
-}
-
-.btn-donate:hover,
-.btn-donate:focus,
-.btn-donate.focus,
-.btn-donate:active,
-.btn-donate.active,
-.open > .dropdown-toggle.btn-donate {
-  color: #ffffff;
-  background-color: #b0984d;
-  border-color: #b0984d;
-}
-
 /*Background Transition*/
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-left:hover,

@@ -46,10 +46,13 @@ get_header(); ?>
                             <?php // Define our WP Query Parameters
                                 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                                 $the_query = new WP_Query( array(
-                                    "post_type" => "post",
-                                    "category_name" => "Events",
-                                    "posts_per_page" => 10,
-                                    "paged" => $paged,
+                                    "post_type"         => "post",
+                                    "category_name"     => "Events",
+                                    "posts_per_page"    => 10,
+                                    "paged"             => $paged,
+									"meta_key"			=> "event_date_time",
+                                    "orderby"           => "meta_value",
+                                    "order"             => "DESC"
                                 )); // $the_query
                             ?>
 
@@ -83,7 +86,7 @@ get_header(); ?>
                                                             } // if
 
                                                             // Dissect the $strDate object.
-                                                            $strWeekDay = date_format($strDate, "l");
+                                                            $strWeekDay = date_format($strDate, "D");
                                                             $strMonthDay = date_format($strDate, "M j");
 
                                                             $strEventTime = get_post_meta($post->ID, "eventTime", true);
@@ -91,7 +94,7 @@ get_header(); ?>
 
                                                         <div class="col-xs-12 event-home-item">
                                                             <div class="padding-top-10 col-xs-3 col-md-3 text-center event-home-item-date">
-                                                                <div class="black text-center text-smaller"><?php echo $strWeekDay; ?></div>
+                                                                <div class="black text-center text-small"><?php echo $strWeekDay; ?></div>
                                                                 <h4 class="margin-top-0" style="font-size: 20px;"><?php echo $strMonthDay; ?></h4>
                                                             </div>
 

@@ -24,6 +24,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Image alignment for WordPress
+# Fonts
+# Typography
 # Responsive
 	## Admin Bar
 	## Logo
@@ -31,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Template Pages
 	## Homepage
 	## Subpages
+# Page: Tag
 # Commonly Used
 	## Colors
 	## Background Colors
@@ -55,6 +59,7 @@ html {
 }
 
 body {
+	font-family: Calibri;
 	margin: 0;
 }
 
@@ -233,6 +238,7 @@ input[type="submit"] {
 	border: solid 1px #b0984d;
 	margin-top: 5px;
 	padding: 5px;
+	border-radius: 5px;
 }
 
 button[disabled],
@@ -249,6 +255,7 @@ input::-moz-focus-inner {
 input {
 	line-height: 1.5;
 	border: solid 1px #aaa38e;
+	padding-left: 5px;
 }
 
 input[type="checkbox"],
@@ -274,8 +281,8 @@ fieldset {
 }
 
 legend {
-	border: 0;
-	padding: 0;
+	border: none;
+	padding: 5px;
 }
 
 textarea {
@@ -297,6 +304,98 @@ th {
 	padding: 0;
 }
 
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .navbar-nav {
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+}
+
+.logo-font {
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+}
+
+.xlarge_white {
+	font-size: 68px;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	line-height: 1.2;
+}
+
+.large_white {
+	font-size: 42px;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	color: #ffffff;
+	line-height: 1.2;
+}
+
+.xlarge_dark {
+	font-size: 68px;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #333333;
+	line-height: 1.2;
+}
+
+.large_dark {
+	font-size: 42px;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	color: #333333;
+	line-height: 1.2;
+}
+
+.tparrows.preview2 .tp-arr-titleholder {
+	color: #ffffff;
+	text-transform: none;
+	font-weight: 300;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+}
+
+.hebe .tp-arr-titleholder {
+	text-transform: none;
+	font-weight: 300;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	padding-left: 70px;
+}
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+blockquote:after {
+	content: "“";
+	width: 25px;
+	height: 25px;
+	line-height: 36px;
+	font-size: 36px;
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	position: absolute;
+	top: 12px;
+	left: 0px;
+	color: #cdcdcd;
+}
+
+.blockquote:before {
+	font-family: 'Calibri', 'Open Sans', sans-serif;
+	content: "“";
+	font-size: 40px;
+}
+
+.tooltip {
+	font-family: Calibri;
+}
 
 /*--------------------------------------------------------------
 # Responsive
@@ -330,6 +429,7 @@ th {
 .event-home-item .event-home-item-date {
 	background-color: transparent;
 	border-right: solid 1px #00565B;
+	margin-top: 5px;
 }
 
 .event-home-item h4 {
@@ -337,13 +437,13 @@ th {
 }
 
 .event-home-item .event-home-item-location {
-	color: #8C941F !important;
+	color: #5C612A !important;
 	padding: 0px !important;
 	font-weight: 500;
 }
 
 .event-home-item .event-home-item-time {
-	color: #8C941F !important;
+	color: #5C612A !important;
 	font-weight: 500;
 }
 
@@ -359,6 +459,33 @@ th {
   -moz-box-shadow: 1px 1px 1px 1px #b0984d;
   box-shadow: 1px 1px 1px 1px #b0984d;
 	text-decoration: none;
+}
+
+/* Homepage: Blog and Events feed listings */
+.homepage-post img {
+	margin-top: 7px;
+}
+
+.homepage-post p {
+	color: #111;
+	font-weight: 300;
+}
+
+.homepage-post h4 {
+	padding-top: 7px;
+}
+
+.homepage-post:hover {
+	background-color: #FDFCFA;
+	-webkit-box-shadow: 1px 1px 1px 1px #b0984d;
+  -moz-box-shadow: 1px 1px 1px 1px #b0984d;
+  box-shadow: 1px 1px 1px 1px #b0984d;
+	border-radius: 5px;
+}
+
+.homepage-blog-date {
+	color: #5C612A;
+	font-weight: 500;
 }
 
 /* ## Subpages */
@@ -388,11 +515,18 @@ th {
 
 /* Blog Posts: Author and Date Block */
 .blog-author-date {
-	color: #8C914F;
-	font-size: 20px;
+	color: #5C612A;
+	font-size: 18px;
 	position: relative;
 	top: -22px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+/* Blog Posts: Captions */
+.caption {
+	font-style: italic;
+	font-weight: 500;
+	padding-left: 5px;
 }
 
 /* Event Posts: Date/Time and Location Block */
@@ -404,6 +538,118 @@ th {
 	padding-bottom: 10px;
 }
 
+/* Donate Page: Give Form */
+.give-btn:hover {
+	-webkit-box-shadow: 1px 1px 1px 1px #b0984d;
+  -moz-box-shadow: 1px 1px 1px 1px #b0984d;
+  box-shadow: 1px 1px 1px 1px #b0984d;
+}
+
+.give-form ul {
+	display: inline-flex;
+	margin: 0 auto;
+}
+
+.give-form li {
+	margin: 0 10px 20px 0;
+	list-style: none;	
+}
+
+.give-form input {
+	margin: 5px;
+	padding: 8px;
+	border: solid 1px #AAA38E;
+	border-radius: 5px;
+}
+
+.give-recurring-donors-choice {
+	margin: 10px 10px 25px;
+	font-size: 20px;
+}
+
+.give-form fieldset {
+	margin: 12px 0 0 0;
+	border-radius: 5px;
+	background-color: inherit;
+}
+
+.give-form legend {
+	color: #8E4905;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.give-mailchimp-fieldset {
+	border: none;
+	background-color: inherit;
+}
+
+.give-mailchimp-fieldset p {
+	font-size: 20px;
+	font-weight: 400;
+	color: #8E4905;
+}
+
+#give_purchase_submit {
+	border: none;
+	background-color: inherit;
+}
+
+#give-final-total-wrap {
+	font-size: 20px;
+	font-weight: bold;
+	color: #5C612A;
+}
+
+.give-table {
+	padding-bottom: 50px;
+}
+
+.give-table span {
+	padding: 10px;
+	float: left;
+}
+
+.give_purchase_row {
+	background-color: #00565B;
+	color: #FFFFFF;
+	font-size: 125%;
+	padding: 5px;
+}
+
+/*Donate Button*/
+.btn-donate {
+  color: #ffffff;
+  background-color: #8e4905;
+  border-color: #b0984d;
+}
+
+.btn-donate:hover,
+.btn-donate:focus,
+.btn-donate.focus,
+.btn-donate:active,
+.btn-donate.active,
+.open > .dropdown-toggle.btn-donate {
+  color: #ffffff;
+  background-color: #b0984d;
+  border-color: #b0984d;
+}
+
+/*--------------------------------------------------------------
+# Page: Tag
+
+Eliminating styling for .tag as it breaks content display.
+--------------------------------------------------------------*/
+.tags-cloud { }
+.tag { }
+.tag a { }
+.tag a:hover { }
+.dark .tag a { }
+.dark .tag a:hover { }
+
+
 /*--------------------------------------------------------------
 # Commonly Used
 --------------------------------------------------------------*/
@@ -411,6 +657,8 @@ th {
 .purple { color: #4F213A !important; }
 .beige { color: #F8F4EB !important; }
 .orange { color: #8E4905 !important; }
+.olive { color: #8C914F !important; }
+.olive-dark { color: #5C612A !important }
 .turquoise { color: #00565B !important; }
 .white { color: white !important; }
 .black { color: #000 !important; }
@@ -429,6 +677,7 @@ th {
 /* ## Paddings */
 .padding-0 { padding: 0 !important; }
 .padding-right-0 { padding-right: 0 !important; }
+.padding-right-10 {padding-right:10px; }
 .padding-top-5 { padding-top: 5px !important; }
 .padding-top-10 { padding-top: 10px !important; }
 .padding-bottom-10 { padding-bottom: 10px !important; }
@@ -454,6 +703,16 @@ th {
 
 /* ## List Styles */
 .list-style-none { list-style: none; }
+
+/* Contact Form 7 */
+.wpcf7-list-item { display: block; }
+.span.wpcf7-list-item { display: block; }
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+  {
+    color: #8e4905;
+  }
 
 /* ## Text Decorations */
 .no-ul { text-decoration: none !important; }

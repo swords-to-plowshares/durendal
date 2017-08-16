@@ -330,3 +330,28 @@ function bootstrapwp_widgets_init() {
 	); // register_sidebar()
 }
 add_action( 'widgets_init', 'bootstrapwp_widgets_init' );
+
+/**
+ * Whitelist or Blacklist specific classes.
+ */
+function fnFilterBodyClasses($wp_classes, $extra_classes) {
+	$arrBlackList = array("tag");
+	$wp_classes = array_diff( $wp_classes, $arrBlackList );
+	
+	// Add the extra classes back untouched
+    return array_merge( $wp_classes, (array) $extra_classes );
+} // fnFilterBodyClasses
+add_filter("body_class", "fnFilterBodyClasses", 10, 2 );
+
+/**
+ * Advanced Custom Fields | Date Time Picker
+ */
+function my_update_value_date_time_picker( $value, $post_id, $field ) {
+	return strtotime($value);	
+}
+add_filter('acf/update_value/type=date_time_picker', 'my_update_value_date_time_picker', 10, 3);
+
+/**
+ * Contact Form 7
+ */
+define ('WPCF7_LOAD_JS', false );

@@ -36,7 +36,7 @@ get_header(); ?>
 					<?php if( !empty($objFeaturedImage) ): ?>
 						<img src="<?php echo $objFeaturedImage['url']; ?>" class="img-responsive margin-bottom-20" />
 					<?php endif; ?>
-
+					
 					<?php echo apply_filters( 'the_content', $objThePost->post_content ); ?>
 				</div><!-- /col -->
 				

@@ -49,14 +49,18 @@
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- Theme Color: Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#8C914F">
+		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="https://d1qlu92qlflogk.cloudfront.net/images/favicon.ico" />
 
 		<!-- Web Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Calibri:700,400,300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Calibri:700,400,300' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap core CSS -->
 		<link href="<?php bloginfo("template_directory"); ?>/assets/template/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -126,7 +130,7 @@
 				<!-- "full-width": mandatory class for the full-width menu layout -->
 				<!-- "centered": mandatory class for the centered logo layout -->
 				<!-- ================ --> 
-				<header id="main-header" class="header  fixed  clearfix  border-top-0">
+				<header id="main-header" class="header fixed clearfix border-top-0">
 					<!-- header-top start -->
 					<!-- classes:  -->
 					<!-- "dark": dark version of header top e.g. class="header-top dark" -->
@@ -140,19 +144,19 @@
 									<!-- ================ -->
 									<div class="header-top-first clearfix">
 										<ul class="social-links circle animated-effect-1 small clearfix hidden-xs">
-											<li class="facebook"><a target="_blank" href="https://www.facebook.com/vetshelpingvets"><i class="fa fa-facebook"></i></a></li>
-											<li class="twitter"><a target="_blank" href="https://twitter.com/vetshelpingvets"><i class="fa fa-twitter"></i></a></li>
-											<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/swords-to-plowshares"><i class="fa fa-linkedin"></i></a></li>
-											<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/VetsHelpingVets"><i class="fa fa-youtube-play"></i></a></li>
+											<li class="facebook"><a href="https://www.facebook.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-facebook"></i></a></li>
+											<li class="twitter"><a href="https://twitter.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+											<li class="linkedin"><a href="https://www.linkedin.com/company/swords-to-plowshares" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+											<li class="youtube"><a href="https://www.youtube.com/user/VetsHelpingVets" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
 										</ul>
 										<div class="social-links hidden-lg hidden-md hidden-sm circle small">
 											<div class="btn-group dropdown">
 												<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt white"></i></button>
 												<ul class="dropdown-menu dropdown-  olive-bg">
-													<li class="facebook"><a target="_blank" href="https://www.facebook.com/vetshelpingvets"><i class="fa fa-facebook"></i></a></li>
-													<li class="twitter"><a target="_blank" href="https://twitter.com/vetshelpingvets"><i class="fa fa-twitter"></i></a></li>
-													<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/swords-to-plowshares"><i class="fa fa-linkedin"></i></a></li>
-													<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/VetsHelpingVets"><i class="fa fa-youtube-play"></i></a></li>
+													<li class="facebook"><a href="https://www.facebook.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-facebook"></i></a></li>
+													<li class="twitter"><a href="https://twitter.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+													<li class="linkedin"><a href="https://www.linkedin.com/company/swords-to-plowshares" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+													<li class="youtube"><a href="https://www.youtube.com/user/VetsHelpingVets" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -165,8 +169,8 @@
 									<!-- ================ -->
 									<div id="header-top-second"  class="clearfix text-right">
 										<ul class="list-inline">
-											<li><i class="fa fa-phone pr-5 pl-10"></i>1 (415) 252-4788 </li>
-											<li><i class="fa fa-envelope-o pr-5 pl-10"></i> supportvets@stp-sf.org</li>
+											<li><a href="tel:4152524788" class="white"><i class="fa fa-phone pr-5 pl-10"></i> (415) 252-4788 </a></li>
+											<li><a href="/contact-us" class="white"><i class="fa fa-envelope-o pr-5 pl-10"></i> supportvets@stp-sf.org</a></li>
 										</ul>
 									</div>
 									<!-- header-top-second end -->

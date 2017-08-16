@@ -22,6 +22,7 @@
 					<ul class="list-inline">
 						<li class="blog-author-date"><i class="fa fa-user"></i> <?php the_author(); ?></li>
 						<li class="blog-author-date"><i class="fa fa-calendar"></i> <time><?php the_date("M j, Y"); ?></time></li>
+					</ul>
 			<?php endif; ?>
 
 			<!-- ======================================================================
@@ -30,14 +31,15 @@
 			<div class="margin-bottom-40">
 				<?php if(has_post_thumbnail()) { ?>
 					<?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive full-img")); ?>
+					<span class="caption"><?php the_field('feature_image_caption'); ?></span>
 				<?php } ?>
 			</div>
 
 			<?php 
 			// Event Date and Location
 				if ( in_category( "Events" ) ) : ?>
-						<div class="event-home-item-time event-dtl"><i class="fa fa-calendar" style="padding-right:10px;"></i><?php the_field('event_date_time'); ?> </div>
-						<div class="event-home-item-location event-dtl"><i class="fa fa-map-marker" style="padding-right:10px;"></i><?php the_field('event_location'); ?> </div>
+						<div class="event-home-item-time event-dtl"><i class="fa fa-calendar padding-right-10"></i><?php the_field('event_date_time'); ?> </div>
+						<div class="event-home-item-location event-dtl"><i class="fa fa-map-marker padding-right-10"></i><?php the_field('event_location'); ?> </div>
 			<?php endif; ?>
 						
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

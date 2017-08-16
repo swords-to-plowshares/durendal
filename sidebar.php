@@ -15,6 +15,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <!-- Custom CSS --> 
 <link href="<?php bloginfo("template_directory"); ?>/assets/css/sidebar.css" rel="stylesheet" />
 
-<aside id="secondary" class="widget-area" role="complementary">
+<aside id="secondary" class="widget-area hidden-xs hidden-sm" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
