@@ -40,7 +40,7 @@
 										"container"			=> false,
 										"theme_location"	=> "menu-footer",
 										"menu_class"		=> "list-style-none padding-0 margin-left-5",
-										"walker"				=> new Walker_FooterQuickLinks
+										"walker"			=> new Walker_FooterQuickLinks
 									)); ?>
 								</div>
 							</div>
@@ -71,29 +71,47 @@
 							<div class="alert alert-danger hidden" id="MessageNotSent2">
 								Oops! Something went wrong please refresh the page and try again.
 							</div>
-							<form role="form" id="footer-form" class="margin-clear" novalidate="novalidate" action="//swords-to-plowshares.us10.list-manage.com/subscribe/post?u=22a6559c6251f975e7f385476&amp;id=42595ded07" method="post">
+							<form role="form" id="footer-form" name="mc-embedded-subscribe-form" class="margin-clear" novalidate="novalidate" action="//swords-to-plowshares.us10.list-manage.com/subscribe/post?u=22a6559c6251f975e7f385476&amp;id=42595ded07" method="post" target="_blank">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group has-feedback mb-10">
-											<label class="sr-only" for="name2">Name</label>
-											<input type="text" class="form-control" id="name2" placeholder="Name" name="name2">
+											<label class="sr-only" for="mce-FNAME">First Name</label>
+											<input type="text" class="form-control" id="mce-FNAME" placeholder="First Name" name="FNAME">
 											<i class="fa fa-user form-control-feedback"></i>
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group has-feedback mb-10">
-											<label class="sr-only" for="email2">Email address</label>
-											<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2">
+											<label class="sr-only" for="mce-LNAME">Last Name</label>
+											<input type="text" class="form-control" id="mce-LNAME" placeholder="Last Name" name="LNAME">
+											<i class="fa fa-user form-control-feedback"></i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group has-feedback mb-10">
+											<label class="sr-only" for="mce-EMAIL">Email address</label>
+											<input type="email" class="form-control" id="mce-EMAIL" placeholder="Enter email" name="EMAIL">
 											<i class="fa fa-envelope form-control-feedback"></i>
 										</div>
 									</div>
 								</div>
-								<div class="form-group has-feedback mb-10">
-									<label class="sr-only" for="message2">Message</label>
-									<textarea class="form-control" rows="4" id="message2" placeholder="Message" name="message2"></textarea>
-									<i class="fa fa-pencil form-control-feedback"></i>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group has-feedback mb-10">
+											<label class="sr-only" for="mce-COMPANY">Company</label>
+											<input type="text" class="form-control" id="mce-COMPANY" placeholder="Company (optional)" name="COMPANY">
+											<i class="fa fa-building form-control-feedback"></i>
+										</div>
+									</div>
 								</div>
-								<input type="submit" value="Subscribe" class="margin-clear submit-button btn">
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_22a6559c6251f975e7f385476_42595ded07" tabindex="-1" value="">
+								</div>
+								<div class="clear">
+									<input type="submit" value="Subscribe" class="margin-clear submit-button btn">
+								</div>
 							</form>
 						</div>
 					</div>
@@ -117,7 +135,7 @@
 			<div class="subfooter-inner">
 				<div class="row">
 					<div class="col-md-12">
-						<p class="text-center">Copyright © 2017 Swords to Plowshares. All Rights Reserved</p>
+						<p class="text-center">Copyright © <?php echo date("Y"); ?> Swords to Plowshares. All Rights Reserved</p>
 					</div>
 				</div>
 			</div>
@@ -134,37 +152,38 @@
 <!-- JavaScript files placed at the end of the document so the pages load faster -->
 <!-- ================================================== -->
 <!-- Jquery and Bootstap core js files -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="http://d1qlu92qlflogk.cloudfront.net/template-durendal/js/jquery-3.2.1.min.js"></script> -->
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/js/bootstrap.min.js"></script>
 <!-- Modernizr javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/modernizr.js"></script>
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/modernizr.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 <!-- Isotope javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/isotope/isotope.pkgd.min.js"></script>
 <!-- Magnific Popup javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <!-- Appear javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/waypoints/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/waypoints/jquery.waypoints.min.js"></script>
 <!-- Count To javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/jquery.countTo.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.countTo.js"></script>
 <!-- Parallax javascript -->
-<script src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.parallax-1.1.3.js"></script>
 <!-- Contact form -->
-<script src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/jquery.validate.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.validate.js"></script>
 <!-- Morphext -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/morphext/morphext.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/morphext/morphext.min.js"></script>
 <!-- Background Video -->
-<script src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/vide/jquery.vide.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/vide/jquery.vide.js"></script>
 <!-- Owl carousel javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/owlcarousel2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/owl.carousel.min.js"></script>
 <!-- SmoothScroll javascript -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/jquery.browser.js"></script>
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/plugins/SmoothScroll.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.browser.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/SmoothScroll.js"></script>
 <!-- Initialization of Plugins -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/js/template.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/js/template.js"></script>
 <!-- Custom Scripts -->
-<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/template/js/custom.js"></script>
+<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/js/custom.js"></script>
 
 </body>
 </html>

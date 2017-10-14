@@ -86,7 +86,7 @@ get_header(); ?>
 
 <!-- banner start -->
 <!-- ================ -->
-<div class="banner clearfix">
+<div class="banner clearfix hidden-xs">
 
 	<!-- slideshow start -->
 	<!-- ================ -->

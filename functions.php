@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function durendal_scripts() {
+ function durendal_scripts() {
 	wp_enqueue_style( 'durendal-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'durendal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -346,10 +346,10 @@ add_filter("body_class", "fnFilterBodyClasses", 10, 2 );
 /**
  * Advanced Custom Fields | Date Time Picker
  */
-function my_update_value_date_time_picker( $value, $post_id, $field ) {
-	return strtotime($value);	
-}
-add_filter('acf/update_value/type=date_time_picker', 'my_update_value_date_time_picker', 10, 3);
+// function my_update_value_date_time_picker( $value, $post_id, $field ) {
+// 	return strtotime($value);	
+// }
+// add_filter('acf/update_value/type=date_time_picker', 'my_update_value_date_time_picker', 10, 3);
 
 /**
  * Contact Form 7

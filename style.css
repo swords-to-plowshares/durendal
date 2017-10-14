@@ -261,6 +261,7 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box;
+	color: #8e4905;
 	padding: 2px;
 }
 
@@ -301,7 +302,7 @@ table {
 
 td,
 th {
-	padding: 0;
+	padding: 0 5px 0 0;
 }
 
 
@@ -562,6 +563,10 @@ blockquote:after {
 	border-radius: 5px;
 }
 
+.give-hidden label {
+	display: none;
+}
+
 .give-recurring-donors-choice {
 	margin: 10px 10px 25px;
 	font-size: 20px;
@@ -610,6 +615,14 @@ blockquote:after {
 .give-table span {
 	padding: 10px;
 	float: left;
+}
+
+.give-receipt-thead-text {
+	font-size: 22px;
+}
+
+.give-donation-row {
+	background-color: #9AA466;
 }
 
 .give_purchase_row {
@@ -663,6 +676,7 @@ Eliminating styling for .tag as it breaks content display.
 .white { color: white !important; }
 .black { color: #000 !important; }
 .turquoise-dark { color: #06343B !important; }
+.color-white { color:#fff; }
 
 /* ## Background Colors */
 .purple-bg { background-color: #4F213A !important; }
