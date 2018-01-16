@@ -50,7 +50,7 @@ get_header(); ?>
                                     "category_name"     => "Events",
                                     "posts_per_page"    => 10,
                                     "paged"             => $paged,
-									"meta_key"			=> "event_date_time",
+                                    "meta_key"          => "event_date_time",
                                     "orderby"           => "meta_value",
                                     "order"             => "DESC"
                                 )); // $the_query

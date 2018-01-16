@@ -393,22 +393,12 @@ get_header(); ?>
 				<?php // Define our WP Query Parameters
 					$date_now = date('Y-m-d H:i:s');
 					$the_query = get_posts( array(
-						'post_type'			=> 'post',
+						'post_type'      => 'post',
 						'category_name'  => "Events",
-						'posts_per_page' 	=> 3,
-						
-// 						'meta_query' 		=> array(
-// 							array(
-// 								'key'			=> 'event_date_time',
-// 								'compare'		=> '>=',
-// 								'value'			=> $date_now,
-// 								'type'			=> 'DATETIME'
-// 							)
-// 						),
-						
-						'order' 			=> 'DSC',
-						'orderby' 			=> 'DATE',
-						'meta_key'			=> 'event_date_time'
+						'posts_per_page' => 3,
+						"meta_key"       => "event_date_time",
+						"orderby"        => "meta_value",
+						"order"          => "DESC"
 					)); // $the_query
 				?>
 				
