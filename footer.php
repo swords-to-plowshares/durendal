@@ -71,7 +71,7 @@
 							<div class="alert alert-danger hidden" id="MessageNotSent2">
 								Oops! Something went wrong please refresh the page and try again.
 							</div>
-							<form role="form" id="footer-form" name="mc-embedded-subscribe-form" class="margin-clear" novalidate="novalidate" action="//swords-to-plowshares.us10.list-manage.com/subscribe/post?u=22a6559c6251f975e7f385476&amp;id=42595ded07" method="post" target="_blank">
+							<form action="//swords-to-plowshares.us10.list-manage.com/subscribe/post?u=22a6559c6251f975e7f385476&amp;id=42595ded07" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group has-feedback mb-10">
