@@ -153,7 +153,7 @@
 <!-- ================================================== -->
 <!-- Jquery and Bootstap core js files -->
 <!-- <script type="text/javascript" src="http://d1qlu92qlflogk.cloudfront.net/template-durendal/js/jquery-3.2.1.min.js"></script> -->
-<script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.min.js"></script> -->
 <script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/js/bootstrap.min.js"></script>
 <!-- Modernizr javascript -->
 <script type="text/javascript" src="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/modernizr.js"></script>
