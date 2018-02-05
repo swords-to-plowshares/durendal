@@ -106,6 +106,53 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
  * Enqueue scripts and styles.
  */
  function durendal_scripts() {
+	/* ======================================================================
+		Theme Dependencies | Header
+	====================================================================== */
+	// Web Fonts
+	wp_enqueue_style("the_project-font-roboto", "https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
+	wp_enqueue_style("the_project-font-calibri", "https://fonts.googleapis.com/css?family=Calibri:700,400,300");
+	wp_enqueue_style("the_project-font-open-sans", "https://fonts.googleapis.com/css?family=Open+Sans");
+
+	// Bootstrap core CSS
+	wp_enqueue_style("the_project-bootstrap-core", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/css/bootstrap.css");
+
+	// Font Awesome CSS
+	wp_enqueue_style("the_project-font-awesome", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/font-awesome/css/font-awesome.css");
+
+	// Fontello CSS
+	wp_enqueue_style("the_project-fontello", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/fontello/css/fontello.css");
+
+	// Plugins
+	wp_enqueue_style("the_project-magnific-popup", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/magnific-popup/magnific-popup.css");
+	wp_enqueue_style("the_project-rs-plugin-5-settings", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/settings.css");
+	wp_enqueue_style("the_project-rs-plugin-5-layers", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/layers.css");
+	wp_enqueue_style("the_project-rs-plugin-5-navigation", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/navigation.css");
+	wp_enqueue_style("the_project-animations", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/animations.css");
+	wp_enqueue_style("the_project-owl-carousel", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.carousel.min.css");
+	wp_enqueue_style("the_project-owl-theme", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.theme.default.min.css");
+	wp_enqueue_style("the_project-hover", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/hover/hover-min.css");
+	wp_enqueue_style("the_project-morphext", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/morphext/morphext.css");
+	
+	// The Project's core CSS file
+	wp_enqueue_style("the_project-main-style", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/style.css");
+	
+	// The Project's Typography CSS file, includes used fonts
+	// Used font for body: Roboto
+	// Used font for headings: Raleway
+	// Use css/rtl_typography-default.css for RTL version
+	wp_enqueue_style("the_project-typography-default", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/typography-default.css");
+
+	// Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)
+	wp_enqueue_style("the_project-s2pcss", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/s2p.css");
+
+	// Google ReCaptcha
+	wp_enqueue_script("the_project-recaptcha", "https://www.google.com/recaptcha/api.js");
+	
+	
+	/* ======================================================================
+		Added by underscores.
+	====================================================================== */
 	wp_enqueue_style( 'durendal-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'durendal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -115,7 +162,56 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-}
+
+
+	/* ======================================================================
+		Theme Dependencies | Footer
+	====================================================================== */
+	// Jquery and Bootstap core js files
+	wp_enqueue_script("the_project-js-bootstrap-core", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/js/bootstrap.min.js");
+	
+	// Modernizr javascript
+	wp_enqueue_script("the_project-js-modernizr", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/modernizr.js");
+	wp_enqueue_script("the_project-js-jquery-themepunch-tools", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0");
+	wp_enqueue_script("the_project-js-jquery-themepunch-revolution", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0");
+
+	// Isotope javascript
+	wp_enqueue_script("the_project-js-isotope", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/isotope/isotope.pkgd.min.js");
+	
+	// Magnific Popup javascript
+	wp_enqueue_script("the_project-js-jquery-magnific-popup", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/magnific-popup/jquery.magnific-popup.min.js");
+	
+	// Appear javascript
+	wp_enqueue_script("the_project-js-jquery-waypoint", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/waypoints/jquery.waypoints.min.js");
+
+	// Count To javascript
+	wp_enqueue_script("the_project-js-jquery-count-to", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.countTo.js");
+
+	// Parallax javascript
+	wp_enqueue_script("the_project-js-jquery-parallax", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.parallax-1.1.3.js");
+
+	// Contact form
+	wp_enqueue_script("the_project-js-jquery-validate", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.validate.js");
+
+	// Morphext
+	wp_enqueue_script("the_project-js-morphext", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/morphext/morphext.min.js");
+
+	// Background Video
+	wp_enqueue_script("the_project-js-jquery-vide", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/vide/jquery.vide.js");
+
+	// Owl carousel javascript
+	wp_enqueue_script("the_project-js-owl", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/owl.carousel.min.js");
+
+	// SmoothScroll javascript
+	wp_enqueue_script("the_project-js-jquery-browser", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.browser.js");
+	wp_enqueue_script("the_project-js-smooth-scroll", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/SmoothScroll.js");
+
+	// Initialization of Plugins
+	wp_enqueue_script("the_project-js-template-initialization", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/js/template.js");
+
+	// Custom Scripts
+	wp_enqueue_script("the_project-js-s2p-custom", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/js/custom.js");
+} // durendal_scripts()
 add_action( 'wp_enqueue_scripts', 'durendal_scripts' );
 
 /**
