@@ -55,47 +55,6 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="https://d1qlu92qlflogk.cloudfront.net/images/favicon.ico" />
 
-		<!-- Web Fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Calibri:700,400,300' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-		<!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
-		<!-- <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'> -->
-
-		<!-- Bootstrap core CSS -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-		<!-- Font Awesome CSS -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-		<!-- Fontello CSS -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/fontello/css/fontello.css" rel="stylesheet">
-
-		<!-- Plugins -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/settings.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/animations.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/hover/hover-min.css" rel="stylesheet">		
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/morphext/morphext.css" rel="stylesheet">
-		
-		<!-- The Project's core CSS file -->
-		<!-- Use css/rtl_style.css for RTL version -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/style.css" rel="stylesheet" />
-		<!-- The Project's Typography CSS file, includes used fonts -->
-		<!-- Used font for body: Roboto -->
-		<!-- Used font for headings: Raleway -->
-		<!-- Use css/rtl_typography-default.css for RTL version -->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/typography-default.css" rel="stylesheet" />
-		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/s2p.css" rel="stylesheet">
-		
-		<!-- Google ReCaptcha -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-
 		<?php wp_head(); ?>
 	</head>
 
