@@ -39,7 +39,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $strGetPermalink; ?>" />
 		<meta property="og:title" content="<?php echo get_the_title(); ?>" />
-		<meta property="og:description" content="<?php echo $strMetaDescription; ?>" />
+		<meta property="og:description" content="<?php $strMetaDescription; ?>" />
 		<meta property="og:updated_time" content="<?php echo $strMetaModifiedTime; ?>" />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:url" content="<?php echo $strGetPermalink; ?>" />
@@ -102,15 +102,17 @@
 											<li class="twitter"><a href="https://twitter.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
 											<li class="linkedin"><a href="https://www.linkedin.com/company/swords-to-plowshares" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 											<li class="youtube"><a href="https://www.youtube.com/user/VetsHelpingVets" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+											<li class="instagram"><a href="https://www.instagram.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
 										</ul>
 										<div class="social-links hidden-lg hidden-md hidden-sm circle small">
 											<div class="btn-group dropdown">
-												<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt white"></i></button>
-												<ul class="dropdown-menu dropdown-  olive-bg">
+												<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-label="social media links"><i class="fa fa-share-alt white"></i></button>
+												<ul class="dropdown-menu dropdown olive-bg">
 													<li class="facebook"><a href="https://www.facebook.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-facebook"></i></a></li>
 													<li class="twitter"><a href="https://twitter.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
 													<li class="linkedin"><a href="https://www.linkedin.com/company/swords-to-plowshares" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 													<li class="youtube"><a href="https://www.youtube.com/user/VetsHelpingVets" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+													<li class="instagram"><a href="https://www.instagram.com/vetshelpingvets" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
 												</ul>
 											</div>
 										</div>

@@ -21,7 +21,7 @@ get_header(); ?>
 	<div class="purple-bg">
 		<div class="container purple-bg">
 			<div class="jumbotron">
-				<h1 class="white" style="font-size: 34px; text-transform: initial;">
+				<h1 class="white entry-title" style="font-size: 34px; text-transform: initial;">
 					<?php single_post_title(); ?>
 				</h1>
 			</div><!-- /jumbotron -->

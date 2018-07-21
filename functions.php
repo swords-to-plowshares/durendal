@@ -451,3 +451,4 @@ add_filter("body_class", "fnFilterBodyClasses", 10, 2 );
  * Contact Form 7
  */
 define ('WPCF7_LOAD_JS', false );
+add_filter( 'wpcf7_validate_configuration', '__return_false' );

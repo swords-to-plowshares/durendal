@@ -119,7 +119,8 @@ get_header(); ?>
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
 								data-x="left"
-								data-y="200"
+								data-y="bottom"
+								data-voffset="20"
 								data-start="500"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
@@ -159,7 +160,6 @@ get_header(); ?>
 								data-x="center"
 								data-y="160"
 								data-start="500"
-								data-width="650"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
@@ -206,8 +206,8 @@ get_header(); ?>
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
 								data-x="left"
-								data-y="110"
-								data-start="500"
+								data-y="500"
+								data-start="600"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
@@ -227,7 +227,8 @@ get_header(); ?>
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption large_white"
 								data-x="center"
-								data-y="180"
+								data-y="center"
+								data-voffset="100"
 								data-start="650"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;s:900;e:Power4.easeInOut;"
@@ -262,11 +263,10 @@ get_header(); ?>
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
-								data-x="center"
+								data-x="left"
 								data-y="bottom"
 								data-voffset="50"
 								data-start="500"
-								data-width="650"
 								data-transform_idle="o:1;"
 								data-transform_in="y:[100%];sX:1;sY:1;o:0;s:900;e:Power4.easeInOut;"
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
