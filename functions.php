@@ -109,13 +109,8 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	/* ======================================================================
 		Theme Dependencies | Header
 	====================================================================== */
-	// Web Fonts
-	wp_enqueue_style("the_project-font-roboto", "https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
-	wp_enqueue_style("the_project-font-calibri", "https://fonts.googleapis.com/css?family=Calibri:700,400,300");
-	wp_enqueue_style("the_project-font-open-sans", "https://fonts.googleapis.com/css?family=Open+Sans");
-
-	// Bootstrap core CSS
-	wp_enqueue_style("the_project-bootstrap-core", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/css/bootstrap.css");
+	// Main CSS Bundle by Gulp
+	wp_enqueue_style("durendal_main_css", get_template_directory_uri() . "/assets/bundles/styles.min.css");
 
 	// Font Awesome CSS
 	wp_enqueue_style("the_project-font-awesome", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/font-awesome/css/font-awesome.css");
@@ -167,8 +162,8 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	/* ======================================================================
 		Theme Dependencies | Footer
 	====================================================================== */
-	// Jquery and Bootstap core js files
-	wp_enqueue_script("the_project-js-bootstrap-core", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/js/bootstrap.min.js");
+	// Main JS Bundle by Gulp
+	wp_enqueue_script("durendal_main_js", get_template_directory_uri() . "/assets/bundles/scripts.min.js");
 	
 	// Modernizr javascript
 	wp_enqueue_script("the_project-js-modernizr", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/modernizr.js");
