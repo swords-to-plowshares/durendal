@@ -1,0 +1,31 @@
+{
+  "name": "durendal",
+  "version": "1.0.0",
+  "description": "Main theme for Swords-to-Plowshares.org as of 2018.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://duaneleem@bitbucket.org/leemtek/wp-theme-durendal.git"
+  },
+  "keywords": [
+    "veterans",
+    "non-profit"
+  ],
+  "author": "Duane Leem <duane@leemtek.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/leemtek/wp-theme-durendal#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-remote-src": "^0.4.3",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-util": "^3.0.8"
+  }
+}

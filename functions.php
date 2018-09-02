@@ -109,6 +109,9 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	/* ======================================================================
 		Theme Dependencies | Header
 	====================================================================== */
+	// Main CSS Bundle by Gulp
+	// wp_enqueue_style("durendal_main_css", get_template_directory_uri() . "/assets/bundles/styles.min.css");
+
 	// Web Fonts
 	wp_enqueue_style("the_project-font-roboto", "https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
 	wp_enqueue_style("the_project-font-calibri", "https://fonts.googleapis.com/css?family=Calibri:700,400,300");
@@ -123,14 +126,18 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	// Fontello CSS
 	wp_enqueue_style("the_project-fontello", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/fonts/fontello/css/fontello.css");
 
+	// Slider Revolution | Homepage Only
+	if (is_front_page()) {
+		wp_enqueue_style("the_project-rs-plugin-5-settings", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/settings.css");
+		wp_enqueue_style("the_project-rs-plugin-5-layers", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/layers.css");
+		wp_enqueue_style("the_project-rs-plugin-5-navigation", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/navigation.css");
+	} // if
+
 	// Plugins
 	wp_enqueue_style("the_project-magnific-popup", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/magnific-popup/magnific-popup.css");
-	wp_enqueue_style("the_project-rs-plugin-5-settings", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/settings.css");
-	wp_enqueue_style("the_project-rs-plugin-5-layers", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/layers.css");
-	wp_enqueue_style("the_project-rs-plugin-5-navigation", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/css/navigation.css");
 	wp_enqueue_style("the_project-animations", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/css/animations.css");
-	wp_enqueue_style("the_project-owl-carousel", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.carousel.min.css");
-	wp_enqueue_style("the_project-owl-theme", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.theme.default.min.css");
+	// wp_enqueue_style("the_project-owl-carousel", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.carousel.min.css");
+	// wp_enqueue_style("the_project-owl-theme", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/assets/owl.theme.default.min.css");
 	wp_enqueue_style("the_project-hover", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/hover/hover-min.css");
 	wp_enqueue_style("the_project-morphext", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/morphext/morphext.css");
 	
@@ -167,13 +174,20 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	/* ======================================================================
 		Theme Dependencies | Footer
 	====================================================================== */
+	// Main JS Bundle by Gulp
+	// wp_enqueue_script("durendal_main_js", get_template_directory_uri() . "/assets/bundles/scripts.min.js");
+
 	// Jquery and Bootstap core js files
 	wp_enqueue_script("the_project-js-bootstrap-core", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/bootstrap/js/bootstrap.min.js");
 	
 	// Modernizr javascript
 	wp_enqueue_script("the_project-js-modernizr", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/modernizr.js");
-	wp_enqueue_script("the_project-js-jquery-themepunch-tools", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0");
-	wp_enqueue_script("the_project-js-jquery-themepunch-revolution", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0");
+	
+	// Slider Revolution | Homepage Only
+	if (is_front_page()) {
+		wp_enqueue_script("the_project-js-jquery-themepunch-tools", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0");
+		wp_enqueue_script("the_project-js-jquery-themepunch-revolution", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0");
+	}
 
 	// Isotope javascript
 	wp_enqueue_script("the_project-js-isotope", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/isotope/isotope.pkgd.min.js");
@@ -200,7 +214,7 @@ add_action( 'widgets_init', 'durendal_widgets_init' );
 	wp_enqueue_script("the_project-js-jquery-vide", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/vide/jquery.vide.js");
 
 	// Owl carousel javascript
-	wp_enqueue_script("the_project-js-owl", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/owl.carousel.min.js");
+	// wp_enqueue_script("the_project-js-owl", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/owlcarousel2/owl.carousel.min.js");
 
 	// SmoothScroll javascript
 	wp_enqueue_script("the_project-js-jquery-browser", "https://d1qlu92qlflogk.cloudfront.net/template-durendal/plugins/jquery.browser.js");
@@ -250,13 +264,13 @@ class MainNav_Walker extends Walker_Nav_Menu {
 	} // start_lvl
 	
 	function end_lvl( &$output, $depth = 0, $args = array() ) {
-        $indent = str_repeat("\t", $depth);
-        $output .= "$indent</ul>\n";
-    } // end_lvl
+		$indent = str_repeat("\t", $depth);
+		$output .= "$indent</ul>\n";
+	} // end_lvl
 
 	// Add dropdowns after first <li>
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-        if($depth == 0) {
+		if($depth == 0) {
 			$output .= sprintf( '<li class="dropdown"><a href="' . $item->url . '" class="dropdown-toggle padding-left-5" data-toggle="dropdown">' . $item->title . '</a>',
 				$item->url,
 				( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
@@ -269,8 +283,7 @@ class MainNav_Walker extends Walker_Nav_Menu {
 				$item->title
 			);
 		}
-		
-    } // start_el()
+	} // start_el()
 } // MainNav_Walker
 
 
@@ -280,12 +293,12 @@ class MainNav_Walker extends Walker_Nav_Menu {
 class Walker_FooterQuickLinks extends Walker_Nav_Menu {
 	// Add dropdowns after first <li>
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-       $output .= sprintf( '<li class="margin-bottom-5 hover-purple"><a href="' . $item->url . '" class="no-ul">' . $item->title . '</a>',
+			$output .= sprintf( '<li class="margin-bottom-5 hover-purple"><a href="' . $item->url . '" class="no-ul">' . $item->title . '</a>',
 			$item->url,
 			( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
 			$item->title
 		);
-    } // start_el()
+	} // start_el()
 }
 
 
