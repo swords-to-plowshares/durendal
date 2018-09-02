@@ -4,6 +4,7 @@ const gulp = require("gulp"),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   uglifycss = require('gulp-uglifycss'),
+  cleanCSS = require('gulp-clean-css'),
   gutil = require('gulp-util'),
   remoteSrc = require('gulp-remote-src')
 ;

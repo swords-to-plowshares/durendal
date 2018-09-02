@@ -20,8 +20,10 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-remote-src": "^0.4.3",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8"
