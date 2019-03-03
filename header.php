@@ -22,7 +22,16 @@
 			$strMetaModifiedTime = get_the_modified_time("F j, Y");
 			$strGetPermalink = get_permalink();
 		?>
-		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25819039-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-25819039-1');
+    </script>
+    
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
 		<title><?php 
 			// If page is homepage, set title to something else.
 			if (get_the_ID() == 4) {

@@ -48,6 +48,13 @@ function durendal_setup() {
 		'menu-footer' => esc_html__( 'Footer Quick Links', 'durendal' ),
 	) );
 
+  // remove links/menus from the admin bar
+  function mytheme_admin_bar_render() {
+	  global $wp_admin_bar;
+	  $wp_admin_bar->remove_menu('comments');
+    }
+  add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+  
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -452,3 +459,33 @@ add_filter("body_class", "fnFilterBodyClasses", 10, 2 );
  */
 define ('WPCF7_LOAD_JS', false );
 add_filter( 'wpcf7_validate_configuration', '__return_false' );
+
+// Job Postings
+/* Include categories on the listing of jobs for admins */
+add_filter( 'manage_edit-jobs_columns', 'my_edit_jobs_columns' ) ;
+
+function my_edit_jobs_columns ( $columns ) {
+
+	$columns = array(
+		'cb' => '<input type="checkbox" />',
+		'title' => __( 'Position' ),
+		'category' => __( 'Category' ),
+		'author' => __( 'Author' ),
+		'date' => __( 'Date' )
+	);
+
+	return $columns;
+  } 
+/* add_action( 'manage_jobs_posts_custom_column', 'my_manage_jobs_columns', 10, 2 );
+
+ function my_manage_jobs_columns( $column, $post_id ) {
+	$category = get_post_meta( $post_id, 'category', true );
+	/* If no category is found, output a default message. 
+			if ( empty( $category ) )
+				echo __( 'Open or Closed?' );
+			else
+				echo $category;
+	}
+} */
+               // Job Postings
+
