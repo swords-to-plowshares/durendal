@@ -758,6 +758,11 @@ Eliminating styling for .tag as it breaks content display.
 /* ## Text Sizes */
 .text-smaller { font-size: smaller; }
 
+/* GiveWP fix */
+.give-form-title {
+    display:none;
+}
+
 /* Social Media Icons */
 /*.instagram {
 	background: #d6249f;

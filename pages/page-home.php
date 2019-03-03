@@ -118,7 +118,7 @@ get_header(); ?>
 
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_white"
-								data-x="left"
+								data-x="right"
 								data-y="bottom"
 								data-voffset="20"
 								data-start="500"
@@ -127,7 +127,7 @@ get_header(); ?>
 								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
 								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									<?php echo $strHero1_description; ?><br />
+									<?php echo $strHero1_description; ?>
 									<a href="<?php echo $strHero1_url; ?>" class="btn radius-50 btn-default btn-animated margin-clear">Read More <i class="fa fa-arrow-right"></i></a> 
 							</div>
 

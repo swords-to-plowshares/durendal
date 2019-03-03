@@ -214,6 +214,24 @@ fieldset[disabled] .btn-default {
   border-color: #ffffff;
 }
 
+/*Alt Button*/
+.btn-alt {
+  color: #ffffff;
+  background-color: #910e24;
+  border: solid 1px #f9f9f9;
+}
+
+.btn-alt:hover,
+.btn-alt:focus,
+.btn-alt.focus,
+.btn-alt:active,
+.btn-alt.active,
+.open > .dropdown-toggle.btn-alt {
+  color: #ffffff;
+  background-color: #050972;
+  border: solid 1px #f9f9f9;
+}
+
 /*Background Transition*/
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-left:hover,
